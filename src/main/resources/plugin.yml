@@ -1,0 +1,7 @@
+name: NoFireworkCrossbows
+version: '${project.version}'
+main: net.prolieum.antifwcrossbow.Antifwcrossbow
+api-version: 1.18
+prefix: AFWCB
+authors: [ TheDeafCreeper ]
+description: Removes firework crossbows
