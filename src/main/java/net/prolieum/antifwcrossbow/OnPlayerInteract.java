@@ -24,11 +24,11 @@ public class OnPlayerInteract implements Listener {
         if (itemStack.getType() == Material.CROSSBOW & offhand.getType() == Material.FIREWORK_ROCKET) {
             if (((CrossbowMeta) Objects.requireNonNull(itemStack.getItemMeta())).getChargedProjectiles().size() > 0) return;
             event.setCancelled(true);
-            player.sendMessage("§cFirework Crossbows are disabled.");
+            player.sendMessage("§cUsing fireworks in crossbows is disabled.");
         } else if (offhand.getType() == Material.CROSSBOW && itemStack.getType() == Material.FIREWORK_ROCKET) {
             if (((CrossbowMeta) Objects.requireNonNull(offhand.getItemMeta())).getChargedProjectiles().size() > 0) return;
             event.setCancelled(true);
-            player.sendMessage("§cFirework Crossbows are disabled.");
+            player.sendMessage("§cUsing fireworks in crossbows is disabled.");
         }
     }
 }
